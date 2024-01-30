@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: redirect('/books')
   resources :books do
     member do
       get 'delete'
